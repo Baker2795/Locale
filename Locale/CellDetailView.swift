@@ -42,7 +42,7 @@ class CellDetailView: UIViewController, MKMapViewDelegate {
 	override func viewWillDisappear(_ animated : Bool) {
 		super.viewWillDisappear(animated)
 		
-		if self.isMovingFromParentViewController {
+		if self.isMovingFromParent {
 			navigationController?.navigationItem.hidesBackButton = true
 		}
 	}
